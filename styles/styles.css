@@ -1,3 +1,25 @@
+/* Header navigation styling */
+header {
+    background-color: #4272a5;
+    /* Steel blue background */
+    padding: 1rem;
+}
+
+nav a {
+    color: #ffffff;
+    /* White link text */
+    text-decoration: underline;
+    display: block;
+    /* Stacks links vertically */
+    padding: 0.25rem 0;
+}
+
+/* Heading color */
+h1 {
+    color: #4272a5;
+    /* Matching blue text for the main heading */
+}
+
 /* Limit main width */
 main {
     max-width: 840px;
@@ -24,7 +46,6 @@ aside {
 aside img {
     width: 200px;
     height: auto;
-    /* Maintains aspect ratio without distortion */
 }
 
 /* Reset paragraph padding */
@@ -32,7 +53,7 @@ p {
     padding: 0;
 }
 
-/* Footer styling: margin top, border top, and centered text */
+/* Footer styling */
 footer {
     margin-top: 2rem;
     border-top: 1px solid #ccc;
