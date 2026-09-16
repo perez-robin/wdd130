@@ -28,35 +28,39 @@ nav a {
 /* Heading color */
 h1 {
     color: #4272a5;
+    margin-bottom: 1rem;
 }
 
-/* Limit main width */
+/* Centered main container limit */
 main {
     max-width: 840px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-/* Specific styling for the profile image inside main */
-main img {
+/* Direct child profile image float */
+main > img {
     width: 150px;
     height: auto;
     float: right;
+    margin-left: 1rem;
 }
 
-/* Sidebar (aside) styling */
+/* Sidebar (aside) card styling */
 aside {
-    width: 20rem;
-    text-align: center;
     position: relative;
     clear: both;
 }
 
+/* Absolute position for the section heading on top of the image */
 aside h2 {
     position: absolute;
     top: 67px;
     left: 150px;
+    color: #000;
 }
 
-/* Specific styling for the image inside the aside */
+/* Styling for the country image inside the aside */
 aside img {
     width: 200px;
     height: auto;
@@ -69,17 +73,9 @@ p {
     padding: 0;
 }
 
-/* Footer styling */
-footer {
-    margin-top: 1em;
-    border-top: 1px solid #000;
-    text-align: center;
-}
-
 /* Class Selectors */
-
 .box {
-    margin: 1rem;
+    margin: 1rem 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: #eee;
@@ -88,4 +84,12 @@ footer {
 
 .indent {
     padding-left: 2rem;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 1rem 0;
 }
