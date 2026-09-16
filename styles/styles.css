@@ -52,7 +52,7 @@ aside {
 aside h2 {
     position: absolute;
     top: 67px;
-    left: 150px;
+    left: 80px;
 }
 
 /* Specific styling for the image inside the aside */
@@ -74,6 +74,7 @@ footer {
 }
 
 /* Class Selectors */
+
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
