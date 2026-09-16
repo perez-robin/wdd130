@@ -5,27 +5,48 @@
     box-sizing: border-box;
 }
 
+/* Base Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
 /* Header navigation styling */
 header {
     background-color: #4272a5;
     padding: 1rem;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 nav a {
     color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
     text-decoration: underline;
-    display: block;
-    padding: 0.25rem 0;
 }
 
 /* Heading color */
 h1 {
     color: #4272a5;
+    margin-bottom: 1rem;
 }
 
-/* Limit main width */
+/* Limit main width and center content */
 main {
     max-width: 840px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 /* Specific styling for the profile image inside main */
@@ -33,19 +54,55 @@ main img {
     width: 150px;
     height: auto;
     float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
-/* Sidebar (aside) styling */
+/* Unordered list styling */
+main ul {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+main ul a {
+    color: #4272a5;
+}
+
+/* Sidebar (aside) box styling */
 aside {
-    width: 20rem;
-    text-align: center;
     position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem 0;
+}
+
+.box {
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
 }
 
 /* Specific styling for the image inside the aside */
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* Heading overlay fixing text collision */
+.state {
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #333;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
 }
 
 /* Reset paragraph padding */
@@ -56,23 +113,8 @@ p {
 /* Footer styling */
 footer {
     margin-top: 2rem;
+    padding: 1rem 0;
     border-top: 1px solid #ccc;
     text-align: center;
-}
-
-/* Class Selectors */
-
-.box {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-}
-
-/* Heading overlay */
-.state {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    font-size: 0.9rem;
 }
