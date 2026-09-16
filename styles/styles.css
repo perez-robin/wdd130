@@ -8,7 +8,7 @@
 /* Base Body Styling */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+    color: #333333;
     line-height: 1.6;
 }
 
@@ -18,7 +18,7 @@ header {
     padding: 1rem;
 }
 
-header nav {
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -27,13 +27,14 @@ header nav {
 
 nav a {
     color: #ffffff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+    text-decoration: underline;
+    display: block;
+    padding: 0.25rem 0;
     font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #dddddd;
 }
 
 /* Heading color */
@@ -42,7 +43,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* Limit main width and center content */
+/* Limit main width */
 main {
     max-width: 840px;
     margin: 2rem auto;
@@ -54,55 +55,24 @@ main img {
     width: 150px;
     height: auto;
     float: right;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     margin-bottom: 1rem;
 }
 
-/* Unordered list styling */
-main ul {
-    margin: 1.5rem 0;
-    padding-left: 2rem;
-}
-
-main ul a {
-    color: #4272a5;
-}
-
-/* Sidebar (aside) box styling */
+/* Sidebar (aside) styling */
 aside {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    margin: 2rem 0;
-}
-
-.box {
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: 20rem;
+    margin: 2rem auto;
     text-align: center;
+    position: relative;
 }
 
 /* Specific styling for the image inside the aside */
 aside img {
-    width: 100%;
+    width: 200px;
     height: auto;
     display: block;
-    margin: 0 auto 1rem auto;
-}
-
-/* Heading overlay fixing text collision */
-.state {
-    position: absolute;
-    top: 1.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.85);
-    color: #333;
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    font-size: 1.2rem;
+    margin: 0 auto;
 }
 
 /* Reset paragraph padding */
@@ -113,8 +83,37 @@ p {
 /* Footer styling */
 footer {
     margin-top: 2rem;
-    padding: 1rem 0;
+    padding: 1rem;
     border-top: 1px solid #ccc;
     text-align: center;
-    font-size: 0.9rem;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+}
+
+/* Unordered list box formatting */
+ul.box {
+    list-style-position: inside;
+}
+
+ul.box a {
+    color: #4272a5;
+}
+
+/* Heading overlay using absolute positioning */
+aside h2.state {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
 }
