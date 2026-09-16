@@ -8,7 +8,7 @@
 /* Base Body Styling */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #333333;
+    color: #333;
     line-height: 1.6;
 }
 
@@ -18,36 +18,21 @@ header {
     padding: 1rem;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 nav a {
     color: #ffffff;
     text-decoration: underline;
     display: block;
     padding: 0.25rem 0;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #dddddd;
 }
 
 /* Heading color */
 h1 {
     color: #4272a5;
-    margin-bottom: 1rem;
 }
 
 /* Limit main width */
 main {
     max-width: 840px;
-    margin: 2rem auto;
-    padding: 0 1rem;
 }
 
 /* Specific styling for the profile image inside main */
@@ -55,24 +40,25 @@ main img {
     width: 150px;
     height: auto;
     float: right;
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
 }
 
 /* Sidebar (aside) styling */
 aside {
     width: 20rem;
-    margin: 2rem auto;
     text-align: center;
     position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 67px;
+    left: 150px;
 }
 
 /* Specific styling for the image inside the aside */
 aside img {
     width: 200px;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
 /* Reset paragraph padding */
@@ -82,38 +68,20 @@ p {
 
 /* Footer styling */
 footer {
-    margin-top: 2rem;
-    padding: 1rem;
-    border-top: 1px solid #ccc;
+    margin-top: 1em;
+    border-top: 1px solid #000;
     text-align: center;
 }
 
 /* Class Selectors */
-
 .box {
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: #eee;
-    color: #333;
+    color: #000;
 }
 
-/* Unordered list box formatting */
-ul.box {
-    list-style-position: inside;
-}
-
-ul.box a {
-    color: #4272a5;
-}
-
-/* Heading overlay using absolute positioning */
-aside h2.state {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+.indent {
+    padding-left: 2rem;
 }
