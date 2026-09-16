@@ -31,14 +31,14 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* Centered main container limit */
+/* Limit main width and center content */
 main {
     max-width: 840px;
     margin: 0 auto;
     padding: 1rem;
 }
 
-/* Direct child profile image float */
+/* Specific styling for the profile image inside main (float right) */
 main > img {
     width: 150px;
     height: auto;
@@ -46,13 +46,13 @@ main > img {
     margin-left: 1rem;
 }
 
-/* Sidebar (aside) card styling */
+/* Sidebar (aside) styling with position relative for absolute children */
 aside {
     position: relative;
     clear: both;
 }
 
-/* Absolute position for the section heading on top of the image */
+/* Overlaying heading element over the image using absolute positioning */
 aside h2 {
     position: absolute;
     top: 67px;
@@ -60,7 +60,7 @@ aside h2 {
     color: #000;
 }
 
-/* Styling for the country image inside the aside */
+/* Specific styling for the image inside the aside */
 aside img {
     width: 200px;
     height: auto;
@@ -73,7 +73,16 @@ p {
     padding: 0;
 }
 
+/* Footer styling */
+footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 1rem 0;
+}
+
 /* Class Selectors */
+
 .box {
     margin: 1rem 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -84,12 +93,4 @@ p {
 
 .indent {
     padding-left: 2rem;
-}
-
-/* Footer styling */
-footer {
-    margin-top: 1em;
-    border-top: 1px solid #000;
-    text-align: center;
-    padding: 1rem 0;
 }
