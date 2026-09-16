@@ -1,23 +1,26 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Header navigation styling */
 header {
     background-color: #4272a5;
-    /* Steel blue background */
     padding: 1rem;
 }
 
 nav a {
     color: #ffffff;
-    /* White link text */
     text-decoration: underline;
     display: block;
-    /* Stacks links vertically */
     padding: 0.25rem 0;
 }
 
 /* Heading color */
 h1 {
     color: #4272a5;
-    /* Matching blue text for the main heading */
 }
 
 /* Limit main width */
@@ -29,17 +32,14 @@ main {
 main img {
     width: 150px;
     height: auto;
+    float: right;
 }
 
 /* Sidebar (aside) styling */
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+    position: relative;
 }
 
 /* Specific styling for the image inside the aside */
@@ -58,4 +58,21 @@ footer {
     margin-top: 2rem;
     border-top: 1px solid #ccc;
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+}
+
+/* Heading overlay */
+.state {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
