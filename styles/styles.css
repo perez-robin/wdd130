@@ -47,6 +47,7 @@ aside {
     width: 20rem;
     text-align: center;
     position: relative;
+    clear: both;
 }
 
 aside h2 {
@@ -59,6 +60,8 @@ aside h2 {
 aside img {
     width: 200px;
     height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
 }
 
 /* Reset paragraph padding */
