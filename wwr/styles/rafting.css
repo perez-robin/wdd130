@@ -5,26 +5,27 @@
    ========================================================================== */
 
 :root {
-    /* Neutral & Professional Palette */
+    /* Color Palette: Corporate Navy & Warm Amber */
     --primary-color: #1a2b4c;
-    /* Deep Corporate Navy */
+    /* Deep Navy */
     --secondary-color: #d97724;
-    /* Warm Earthy Amber */
+    /* Warm Amber */
     --accent1-color: #2c3e50;
     /* Slate Blue */
     --accent2-color: #f4f6f9;
-    /* Clean Light Background */
+    /* Light Background */
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Universal Reset */
+/* Universal Box Model Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base Body Style */
 body {
     font-family: var(--body-font);
     color: #333333;
@@ -32,6 +33,7 @@ body {
     line-height: 1.6;
 }
 
+/* Page Alignment Constraint */
 header,
 main,
 footer {
@@ -70,14 +72,14 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-/* Headings */
+/* Typography */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* General Layout Elements */
+/* Structural Spacing */
 nav,
 p,
 section,
@@ -92,7 +94,7 @@ article {
     border-left: 4px solid var(--primary-color);
 }
 
-/* Hero Overlay */
+/* Hero Section & Position Overlays */
 .hero {
     position: relative;
     margin-top: 1rem;
@@ -132,7 +134,7 @@ article {
     border-radius: 4px;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
     margin-top: 2rem;
     background-color: var(--primary-color);
