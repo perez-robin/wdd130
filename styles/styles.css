@@ -12,12 +12,17 @@ body {
     line-height: 1.6;
 }
 
-/* Combined rule to limit width and center content */
+/* Combined rule for header, grid container, and footer */
 header,
 .grid,
 footer {
     max-width: 840px;
     margin: 0 auto;
+}
+
+/* Header background styling */
+header {
+    background-color: #4272a5;
 }
 
 /* Navigation layout using Flexbox */
@@ -36,7 +41,7 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #fff;
+    color: #ffffff;
 }
 
 nav a:hover {
@@ -81,7 +86,7 @@ main {
     margin: 1rem;
 }
 
-/* Specific styling for profile image inside main */
+/* Profile image inside main */
 main img {
     width: 150px;
     height: auto;
