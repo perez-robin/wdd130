@@ -12,43 +12,81 @@ body {
     line-height: 1.6;
 }
 
-/* Header navigation styling */
-header {
-    background-color: #4272a5;
-    padding: 1rem;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
+/* Regla combinada para centrar contenido */
+header,
+.grid,
+footer {
     max-width: 840px;
     margin: 0 auto;
 }
 
+/* Header background styling */
+header {
+    background-color: #4272a5;
+}
+
+/* Navigation layout using Flexbox */
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Navigation links styling */
 nav a {
-    color: #ffffff;
-    text-decoration: none;
+    display: block;
     padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* Heading color */
+/* Heading color and bottom border */
 h1 {
     color: #4272a5;
     margin-bottom: 1rem;
+    border-bottom: 2px solid #ccc;
 }
 
-/* Limit main width and center content */
+/* CSS Grid layout for main and aside content */
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+aside h2 {
+    color: #4272a5;
+    margin-bottom: 0.5rem;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
 main {
-    max-width: 840px;
-    margin: 0 auto;
-    padding: 1rem;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
-/* Specific styling for the profile image inside main (float right) */
+/* Specific styling for profile image inside main */
 main img {
     width: 150px;
     height: auto;
@@ -69,33 +107,10 @@ main img {
 .indent {
     padding-left: 2rem;
     clear: both;
-    /* Limpia el float de la foto de perfil */
-}
-
-/* Sidebar (aside) styling */
-aside {
-    max-width: 840px;
-    margin: 1rem auto;
-    text-align: center;
-}
-
-aside h2 {
-    color: #4272a5;
-    margin-bottom: 0.5rem;
-}
-
-/* Specific styling for the image inside the aside */
-aside img {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto 1rem auto;
 }
 
 /* Footer styling */
 footer {
-    max-width: 840px;
-    margin: 1rem auto 0 auto;
     border-top: 1px solid #000;
     text-align: center;
     padding: 1rem 0;
