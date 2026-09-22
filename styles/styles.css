@@ -12,17 +12,12 @@ body {
     line-height: 1.6;
 }
 
-/* Regla combinada para centrar contenido */
+/* Combined rule to limit width and center content */
 header,
 .grid,
 footer {
     max-width: 840px;
     margin: 0 auto;
-}
-
-/* Header background styling */
-header {
-    background-color: #4272a5;
 }
 
 /* Navigation layout using Flexbox */
