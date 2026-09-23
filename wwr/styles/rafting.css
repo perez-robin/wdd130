@@ -1,7 +1,7 @@
 /* ==========================================================================
    Brand:         Aura River Expeditions
    Developer:     Robin Perez
-   Course:        WDD 130 - W03 Rafting Site
+   Course:        WDD 130 - W04 Rafting Site Layout
    ========================================================================== */
 
 :root {
@@ -41,18 +41,24 @@ footer {
     margin: 0 auto;
 }
 
-/* Header & Navigation */
+/* Header & Navigation (CSS Grid for Header, CSS Flex for Nav) */
 header {
     background-color: var(--primary-color);
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: space-between;
     padding: 1rem 1.5rem;
 }
 
 header img {
     width: 80px;
     height: auto;
+}
+
+header nav {
+    justify-self: end;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
@@ -80,11 +86,10 @@ h2 {
 }
 
 /* Structural Spacing */
-nav,
 p,
 section,
 article {
-    margin: 16px;
+    margin: 16px 0;
     padding: 8px;
 }
 
@@ -134,7 +139,68 @@ article {
     border-radius: 4px;
 }
 
-/* Footer Section */
+/* History Section Layout (3-Column Grid) */
+.history h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.history-grid img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.history-grid p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Adventures Section Layout (5-Column Grid with Figures) */
+.adventures h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.75rem;
+}
+
+.adventures-grid figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.adventures-grid img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.adventures-grid figcaption {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 0.4rem;
+    color: var(--accent1-color);
+}
+
+/* Footer Section (Flexbox for Alignment) */
 footer {
     margin-top: 2rem;
     background-color: var(--primary-color);
@@ -145,9 +211,16 @@ footer {
     color: #ffffff;
 }
 
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
 .socialmedia {
     display: flex;
     gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 .socialmedia a {
